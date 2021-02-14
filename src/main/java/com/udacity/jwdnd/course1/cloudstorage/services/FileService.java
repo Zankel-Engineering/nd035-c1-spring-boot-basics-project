@@ -4,6 +4,7 @@ import com.udacity.jwdnd.course1.cloudstorage.mapper.FileMapper;
 import com.udacity.jwdnd.course1.cloudstorage.model.File;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.security.auth.login.AccountNotFoundException;
@@ -11,6 +12,7 @@ import java.io.IOException;
 import java.util.List;
 
 @Service
+@Transactional
 public class FileService {
 
     private final FileMapper fileMapper;

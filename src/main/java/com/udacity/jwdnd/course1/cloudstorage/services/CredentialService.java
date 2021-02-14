@@ -11,8 +11,10 @@ import javax.security.auth.kerberos.EncryptionKey;
 import javax.security.auth.login.AccountNotFoundException;
 import java.util.List;
 import java.util.stream.Collectors;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class CredentialService {
     public static final String ENCRYPTION_KEY = RandomStringUtils.random(16, true, true);;
 

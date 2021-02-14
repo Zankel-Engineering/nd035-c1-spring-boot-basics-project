@@ -11,8 +11,10 @@ import java.io.UnsupportedEncodingException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class EncryptionService {
     private Logger logger = LoggerFactory.getLogger(EncryptionService.class);
 

@@ -10,8 +10,10 @@ import org.springframework.stereotype.Service;
 import javax.security.auth.login.AccountNotFoundException;
 import java.security.SecureRandom;
 import java.util.Base64;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class UserService {
 
     private final UserMapper userMapper;
