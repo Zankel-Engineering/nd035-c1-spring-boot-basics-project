@@ -1,16 +1,11 @@
 package com.udacity.jwdnd.course1.cloudstorage.services;
 
 import com.udacity.jwdnd.course1.cloudstorage.mapper.CredentialMapper;
-import com.udacity.jwdnd.course1.cloudstorage.mapper.NoteMapper;
 import com.udacity.jwdnd.course1.cloudstorage.model.Credential;
-import com.udacity.jwdnd.course1.cloudstorage.model.Note;
+import java.util.List;
+import javax.security.auth.login.AccountNotFoundException;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Service;
-
-import javax.security.auth.kerberos.EncryptionKey;
-import javax.security.auth.login.AccountNotFoundException;
-import java.util.List;
-import java.util.stream.Collectors;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
